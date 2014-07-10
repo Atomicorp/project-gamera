@@ -1,0 +1,11 @@
+%pubring pg.pub
+%secring pg.sec
+Key-Type: DSA
+Key-Length: 1024
+Subkey-Type: ELG-E
+Subkey-Length: 1024
+Name-Real: Atomicorp, Inc.
+Name-Comment: Project Gamera synchronization key
+%commit
+
+

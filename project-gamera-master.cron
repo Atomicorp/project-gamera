@@ -1,0 +1,5 @@
+#!/bin/sh
+# project-gamera-client  A shell script to collect client configuration data
+# for a Project Gamera Server 
+
+/usr/share/project-gamera/pg-master.sh
