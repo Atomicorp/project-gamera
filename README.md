@@ -35,6 +35,7 @@ atomicrocketturtle.com. IN MX 100 mail.atomicrocketturtle.com.
 
 Advanced configuration, this is directly from the qmail-scanner documentation:
 
+<code>
 #/etc/tcpserver/smtp.rules
 #
 # No Qmail-Scanner at all for mail from 127.0.0.1
@@ -45,6 +46,7 @@ Advanced configuration, this is directly from the qmail-scanner documentation:
 #
 # Use Qmail-Scanner with SpamAssassin on any mail from the rest of the world
 :allow,QMAILQUEUE="/var/qmail/bin/qmail-scanner-queue.pl"
+</code>
 
 The above example means from now on all SMTP mail will be scanned, but with different characteristics. Mail from the LAN (10. network) will be scanned by the supported virus scanners, whereas mail from the Internet will be scanned for virii AND tagged by SpamAssassin. This finer control allows you a lot of versatility, e.g. virus scanning only performed on mail coming from your Exchange server, and not from your Unix servers.
 
